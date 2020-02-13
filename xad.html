@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>节日快乐</title>
+		<embed src="./img/111.mp3" hidden="true" autostart="true" loop="true"> 
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				height: 100%;
+				background: url('./img/back.gif');
+				background-repeat:no-repeat ;
+				
+				background-size:100% 100%; 
+				
+				background-attachment: fixed;
+				
+			}
+			
+			body #back{
+				width: 100%;
+				height: 100%;
+			}
+			
+			.box {
+				width: 320px;
+				height: 200px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				transform-style: preserve-3d;
+				animation: im 20s linear infinite;
+			}
+			
+			.box img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+			
+			@keyframes im{
+				0% {
+					transform: rotateY(0deg) rotateX(10deg);
+				}
+			
+				25% {
+					transform: rotateY(90deg) rotateX(-10deg);
+				}
+			
+				50% {
+					transform: rotateY(180deg) rotateX(10deg);
+				}
+			
+				75% {
+					transform: rotateY(270deg) rotateX(-10deg);
+				}
+			
+				100% {
+					transform: rotateY(360deg) rotateX(10deg);
+				}
+			
+			}
+			
+			/*10张图片3d变换*/
+			.box img:nth-child(1) {
+				transform: rotateY(0deg) translateZ(600px);
+				backface-visibility: visible;
+			}
+			
+			.box img:nth-child(2) {
+				transform: rotateY(36deg) translateZ(600px);
+				backface-visibility: visible;
+			}
+			
+			.box img:nth-child(3) {
+				transform: rotateY(72deg) translateZ(600px);
+				backface-visibility: visible;
+			}
+			
+			.box img:nth-child(4) {
+				transform: rotateY(108deg) translateZ(600px);
+				backface-visibility: visible;
+			}
+			
+			.box img:nth-child(5) {
+				transform: rotateY(144deg) translateZ(600px);
+				backface-visibility: visible;
+			}
+			
+			.box img:nth-child(6) {
+				transform: rotateY(180deg) translateZ(600px);
+				backface-visibility: visible;
+			}
+			
+			.box img:nth-child(7) {
+				transform: rotateY(216deg) translateZ(600px);
+				backface-visibility:visible;
+			}
+			
+			.box img:nth-child(8) {
+				transform: rotateY(252deg) translateZ(600px);
+				backface-visibility: visible;
+			}
+			
+			.box img:nth-child(9) {
+				transform: rotateY(288deg) translateZ(600px);
+				backface-visibility: visible;
+			}
+			
+			.box img:nth-child(10) {
+				transform: rotateY(324deg) translateZ(600px);
+				backface-visibility: visible;
+			}
+			.room .world{
+				z-index: 100;
+				float: left;
+				font-weight: bolder;
+				font-size: 40px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+			
+		
+		
+		
+		<div class="show">
+			<div class="room">
+				<marquee><span class="world">有人说，这首4分50秒的告白之夜，一分40秒前是告白的欣喜</span></marquee>
+				<marquee><span class="world">1分40秒是告白的倾诉 </span></marquee>
+				<marquee><span class="world">3分10秒已成为过往</span></marquee>
+				<marquee><span class="world">4分15秒是对往事的释然</span></marquee>
+				<marquee><span class="world">所以，我保留了一分40秒到3分10秒的这一段为背景音乐</span></marquee>
+				<marquee><span class="world">&nbsp;&nbsp;&nbsp;不早不晚，刚好是你&nbsp;&nbsp;&nbsp;情人节快乐</span></marquee>
+			</div>
+			
+			
+			
+			<div class="box">
+				<img src="./img/1.jpg" >
+				<img src="./img/44.png" >
+				<img src="./img/2.jpg" >
+				<img src="./img/22.png" >
+				<img src="./img/3.jpg" >
+				<img src="./img/33.png" >
+				<img src="./img/4.jpg" >
+				<img src="./img/11.png" >
+				<img src="./img/5.jpg" >
+			</div>
+		</div>
+	</body>
+</html>
